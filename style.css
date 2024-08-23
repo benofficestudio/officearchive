@@ -2,15 +2,15 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: orange;
 }
 
 #more {display: none;}
 
 h1 {
-  color: black;
+  color: #000;
+  /* color: blue; */
   font-family: "HelveticaNeue-Regular", "Helvetica Neue", "Helvetica Neue",     Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 500;
+  font-weight: 400;
   padding-left: 35px;
   padding-bottom: 50px;
   text-decoration: underline;
