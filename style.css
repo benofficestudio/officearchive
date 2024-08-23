@@ -56,19 +56,6 @@ li a{
   padding: 0px;
 }
 
-
-  h1 {
-    font-size: 25px;
-    color: black;
-    font-family: "Helvetica";
-    font-weight: 500;
-    padding-left: 35px;
-    padding-bottom: 50px;
-    text-decoration: underline;
-    position: absolute;
-    text-transform: uppercase;
-  }
-
   .other {
   margin-top: 70px;
   font-family: "Helvetica";
@@ -80,6 +67,7 @@ li a{
     list-style-type: none;
     color: #000;
 }
+
   #myBtn {
     font-family: "Helvetica";
     font-size: 20px;
