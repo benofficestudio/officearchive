@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  margin: 0;
 }
 
 #more {display: none;}
@@ -16,19 +17,6 @@ h1 {
   text-decoration: underline;
   position: absolute;
   text-transform: uppercase;
-}
-
-
-.other {
-margin-top: 70px;
-  font-family: "HelveticaNeue-Regular", "Helvetica Neue", "Helvetica Neue",     Helvetica, Arial, "Lucida Grande", sans-serif; 
-font-size: 22px;
-line-height: 28px;
-padding-left: 35px;
-text-transform: uppercase;
-position: absolute;
-  list-style-type: none;
-  color: #000;
 }
 
 #myBtn {
@@ -53,7 +41,11 @@ p{
 }
 
 a:hover{
-  color: white; 
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 li a{
@@ -64,41 +56,7 @@ li a{
   padding: 0px;
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 10px;
-}
-.cell{
-  background-color: rgb(255, 255, 255);
-  
-  /* default-small devices */
 
-}[class*="col"]{
-  grid-column-end: span 12;
-}
-
-/* below 600px typically tablet */
-@media only screen and (max-width: 600px){
-
-      .sm1{
-        grid-column-end: span 12;
-      }
-      .sm2{
-        grid-column-end: span 6;
-      }
-      .sm3{
-        grid-column-end: span 4;
-      }
-      .sm4{
-        grid-column-end: span 3;
-      }
-      .sm6{
-        grid-column-end: span 2;
-      }
-      .sm12{
-        grid-column-end: span 1;
-      }
   h1 {
     font-size: 25px;
     color: black;
@@ -133,107 +91,30 @@ li a{
     border: none;
   }
 
-/* above 601px typically tablet */
-@media only screen and (min-width: 601px){
-
-      .md1{
-        grid-column-end: span 12;
-        
-      }
-      .md2{
-        grid-column-end: span 6;
-      }
-      .md3{
-        grid-column-end: span 4;
-      }
-      .md4{
-        grid-column-end: span 3;
-      }
-      .md6{
-        grid-column-end: span 2;
-      }
-      .md12{
-        grid-column-end: span 1;
-      }
-  h1 {
-    font-size: 25px;
-    color: black;
-    font-family: "Helvetica";
-    font-weight: 500;
-    padding-left: 35px;
-    padding-bottom: 50px;
-    text-decoration: underline;
-    position: absolute;
-    text-transform: uppercase;
-  }
-
-  .other {
-  margin-top: 70px;
-  font-family: "Helvetica";
-  font-size: 20px;
-  line-height: 28px;
-  padding-left: 35px;
-  text-transform: uppercase;
-  position: absolute;
-    list-style-type: none;
-    color: #000;
-  }
-  #myBtn {
-    font-family: "Helvetica";
-    font-size: 20px;
-    text-transform: uppercase;
-    position: absolute;
-      list-style-type: none;
-      color: #000;
-    background: none;
-    border: none;
-    padding-block: 0px;
-    padding-inline: 0px;
-    
-  }
-
-  /* above 1025px typically desktop */
-  @media only screen and (min-width: 1025px){
-
-      .col1{
-        grid-column-end: span 12;
-      }
-      .col2{
-        grid-column-end: span 6;
-      }
-      .col3{
-        grid-column-end: span 4;
-      }
-      .col4{
-        grid-column-end: span 3;
-      }
-      .col6{
-        grid-column-end: span 2;
-      }
-      .col12{
-        grid-column-end: span 1;
-      }
-    h1 {
-      color: black;
-      font-family: "Helvetica";
-      font-weight: 500;
-      padding-left: 35px;
-      padding-bottom: 50px;
-      text-decoration: underline;
-      position: absolute;
-      text-transform: uppercase;
-    }
-
-    .other {
-    margin-top: 70px;
-    font-family: "Helvetica";
-    font-size: 22px;
-    line-height: 28px;
-    padding-left: 35px;
-    text-transform: uppercase;
-    position: absolute;
-      list-style-type: none;
-      color: #000;
-      padding-block: 0px;
-      padding-inline: 0px;
+#main-content{
+  margin-top: 75vh;
 }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+
+  .flex-container > div{
+    /* background-color: #f1f1f1; */
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: .8em;
+    color: navy;
+  }
+
+  img{
+    width: 200px;
+    /* border-radius: 15px; */
+    margin: 10px;
+  }
