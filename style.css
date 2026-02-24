@@ -2,7 +2,32 @@ html, body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  margin: 0;
+  margin: 1em;
+  -webkit-text-size-adjust: 95%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container div {
+  flex-flow: row wrap;
+  display: inline-block;
+  text-align: left;
+  max-width: 300px;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    vertical-align: top;
+    transition: opacity 1s;
+    margin-right: 18px;
+}
+
+p{
+  font-size: 0.91em;
+    line-height: 1.4;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-style: italic;
 }
 
 #more {display: none;}
@@ -31,13 +56,6 @@ h1 {
   margin: 0px;
   padding: 0px;
   cursor: pointer;
-}
-
-p{
-  font-size: 15px;
-  padding-top: 15px;
-  line-height: 18px;
-  font-family: "HelveticaNeue-Regular", "Helvetica Neue", "Helvetica Neue",     Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 a:hover{
